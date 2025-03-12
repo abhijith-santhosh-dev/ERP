@@ -30,16 +30,7 @@
                             <div class="invalid-feedback" id="email-error"></div>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="password">Password (leave blank to keep current)</label>
-                            <input type="password" class="form-control" id="password" name="password">
-                            <div class="invalid-feedback" id="password-error"></div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="password_confirmation">Confirm Password</label>
-                            <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
-                        </div>
+                       
                         
                         <div class="form-group">
                             <label for="contact_number">Contact Number</label>
