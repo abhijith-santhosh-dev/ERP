@@ -187,6 +187,17 @@
             <div class="screen__content">
                 <form class="login" method="POST" action="{{ route('login') }}">
                     @csrf
+                    
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        
+                     @endif 
                     <div class="login__field">
                         <i class="login__icon fas fa-user"></i>
                         <input type="email" name="email" class="login__input" placeholder="Email" required>
