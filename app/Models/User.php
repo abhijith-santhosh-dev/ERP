@@ -21,7 +21,14 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'contact_number',
+        'alternative_contact_number',
+        'address',
+        'designation_id',
+        'is_active',
     ];
+
+   
 
     /**
      * The attributes that should be hidden for serialization.
@@ -41,5 +48,21 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
+        'is_active' => 'boolean',
     ];
+
+    public function designation()
+    {
+        return $this->belongsTo(Designation::class);
+    }
+
+    public function scopeActive($query)
+    {
+        return $query->where('is_active', true);
+    }
+
+    public function scopeInactive($query)
+    {
+        return $query->where('is_active', false);
+    }
 }
