@@ -16,7 +16,12 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+          
+            $table->string('contact_number')->nullable();
+            $table->string('alternative_contact_number')->nullable();
+            $table->text('address')->nullable();
+            $table->foreignId('designation_id')->nullable()->constrained()->onDelete('set null');
+            $table->boolean('is_active')->default(true);
             $table->rememberToken();
             $table->timestamps();
         });
