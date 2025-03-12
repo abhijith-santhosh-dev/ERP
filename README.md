@@ -47,3 +47,12 @@ Follow these steps to set up the project on your local machine:
    ```sh
    git clone https://github.com/abhijith-santhosh-dev/ERP.git
    cd ERP
+##  Enhancements
+
+-  Export & Import Data,Provide options to export user/designation data in CSV, Excel, or PDF formats,llow bulk import of users from a CSV file.
+
+- Send email notifications, new user is added, designation is updated, user’s status changes
+
+- Advanced Dashboard Features like chart etc..
+
+- Multi-Language Support
