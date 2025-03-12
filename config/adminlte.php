@@ -339,6 +339,11 @@ return [
             'url' => 'users',
             'icon' => 'fas fa-fw fa-user',
         ],
+        [
+            'text' => 'Logout',
+            'url' => 'logout',
+            'icon' => 'fas fa-fw fa-user',
+        ],
         // [
         //     'text' => 'change_password',
         //     'url' => 'admin/settings',
